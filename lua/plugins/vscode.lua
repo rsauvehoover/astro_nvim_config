@@ -34,6 +34,7 @@ return {
           ["<Leader>ff"] = "<CMD>Find<CR>",
           ["<Leader>fw"] = "<CMD>call VSCodeNotify('workbench.action.findInFiles')<CR>",
           ["<Leader>ls"] = "<CMD>call VSCodeNotify('workbench.action.gotoSymbol')<CR>",
+          [";"] = { ":", desc = "enter command mode" },
         },
       },
     },
