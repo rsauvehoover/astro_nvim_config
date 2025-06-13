@@ -8,7 +8,6 @@ local plugins = {
   "astrocore",
   "astroui",
   "Comment.nvim",
-  "nvim-autopairs",
   "nvim-treesitter",
   "nvim-ts-autotag",
   "nvim-treesitter-textobjects",
