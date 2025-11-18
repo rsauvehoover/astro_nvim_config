@@ -24,4 +24,5 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.helm" },
 }
