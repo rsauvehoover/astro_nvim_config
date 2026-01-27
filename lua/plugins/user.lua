@@ -99,6 +99,13 @@ return {
     "coder/claudecode.nvim",
     dependencies = { "folke/snacks.nvim" },
     config = true,
+    opts = {
+      focus_after_send = true,
+      diff_opts = {
+        vertical_split = false,
+        keep_terminal_focus = true, -- If true, moves focus back to terminal after diff opens (including floating terminals)
+      },
+    },
     keys = {
       { "<leader>a", nil, desc = "AI/Claude Code" },
       { "<leader>ac", "<cmd>ClaudeCode<cr>", desc = "Toggle Claude" },
