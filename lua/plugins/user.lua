@@ -101,6 +101,9 @@ return {
     config = true,
     opts = {
       focus_after_send = true,
+      terminal = {
+        split_width_percentage = 0.40,
+      },
       diff_opts = {
         vertical_split = false,
         keep_terminal_focus = true, -- If true, moves focus back to terminal after diff opens (including floating terminals)
