@@ -1,34 +1,28 @@
-# AstroNvim Template
+# astro_nvim_config
 
-**NOTE:** This is for AstroNvim v5+
+Neovim config built on [AstroNvim](https://github.com/AstroNvim/AstroNvim) v6.
+Lives at `~/.config/nvim`.
 
-A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+Part of a three-repo setup:
 
-## 🛠️ Installation
+- [dotfiles](https://github.com/rsauvehoover/dotfiles): zsh, git, tmux,
+  ghostty, Brewfile. Its `install.sh` installs neovim and clones this repo.
+- astro_nvim_config (this repo): neovim.
+- [claude-config](https://github.com/rsauvehoover/claude-config): Claude Code
+  settings and memory.
 
-#### Make a backup of your current nvim and shared folder
+## Install
 
-```shell
+Normally `~/working/dotfiles/install.sh` clones this into place. To do it by
+hand, move any existing nvim state aside first:
+
+```sh
 mv ~/.config/nvim ~/.config/nvim.bak
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
 mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
+git clone git@github.com:rsauvehoover/astro_nvim_config.git ~/.config/nvim
 ```
 
-#### Create a new user repository from this template
-
-Press the "Use this template" button above to create a new repository to store your user configuration.
-
-You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
-
-#### Clone the repository
-
-```shell
-git clone https://github.com/rsauvehoover/astro_nvim_config.git
-```
-
-#### Start Neovim
-
-```shell
-nvim
-```
+Then start `nvim`. Lazy installs plugins on first launch; `lazy-lock.json`
+pins their versions.
